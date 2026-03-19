@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PageCraft — Modern Web Development Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">PageCraft</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#technologies">Technologies</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#why">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="#contact" class="liquid-btn liquid-btn-ghost">Get in Touch</a>
+    <a href="mailto:pagecraft4@gmail.com" class="liquid-btn liquid-btn-primary">Hire Us</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-orbs">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-tag">Available for new projects</div>
+      <h1 class="hero-title">
+        We craft modern,<br>
+        <span class="line2">fast &amp; scalable</span>
+        websites
+      </h1>
+      <p class="hero-sub">PageCraft is a modern web development agency focused on building high‑quality, responsive, and scalable websites for businesses and startups.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="liquid-btn liquid-btn-primary liquid-btn-lg">View Our Work</a>
+        <a href="#contact" class="liquid-btn liquid-btn-ghost liquid-btn-lg">Start a Project →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Responsive</span></div>
+        <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">Support</span></div>
+        <div class="stat"><span class="stat-num">⚡ Fast</span><span class="stat-label">Delivery</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-3d" id="heroCard3d">
+        <div class="hero-card">
+          <div class="card-top-bar">
+            <div class="dot dot-r"></div>
+            <div class="dot dot-y"></div>
+            <div class="dot dot-g"></div>
+          </div>
+          <div class="code-block">
+            <span class="code-line"><span class="cm">// PageCraft — Building your vision</span></span>
+            <span class="code-line"><span class="kw">const</span> <span class="fn">project</span> = {</span>
+            <span class="code-line">&nbsp;&nbsp;<span class="acc">name</span>: <span class="str">"YourBusiness.com"</span>,</span>
+            <span class="code-line">&nbsp;&nbsp;<span class="acc">stack</span>: [<span class="str">"React"</span>, <span class="str">"Node.js"</span>],</span>
+            <span class="code-line">&nbsp;&nbsp;<span class="acc">design</span>: <span class="str">"Modern UI/UX"</span>,</span>
+            <span class="code-line">&nbsp;&nbsp;<span class="acc">delivery</span>: <span class="str">"Fast ⚡"</span>,</span>
+            <span class="code-line">};</span>
+            <span class="code-line">&nbsp;</span>
+            <span class="code-line"><span class="fn">pagecraft</span>.<span class="acc">build</span>(project);</span>
+            <span class="code-line"><span class="cm">// ✓ Launching your success…</span></span>
+          </div>
+          <div class="card-metrics">
+            <div class="metric"><div class="metric-val">99</div><div class="metric-key">Perf</div></div>
+            <div class="metric"><div class="metric-val">100</div><div class="metric-key">SEO</div></div>
+            <div class="metric"><div class="metric-val">A+</div><div class="metric-key">Grade</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <div class="services-header">
+      <div>
+        <div class="section-eyebrow">What we do</div>
+        <h2 class="section-title">Services Built<br>for Growth</h2>
+      </div>
+      <p class="section-sub">From concept to deployment, we handle every pixel and every line of code.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal" data-mouse>
+        <div class="service-icon">🌐</div>
+        <div class="service-title">Business Website Development</div>
+        <div class="service-desc">Professional, conversion-focused websites that represent your brand and drive results. Fast load times, modern design, fully responsive.</div>
+        <div class="service-tag">Most Popular</div>
+      </div>
+      <div class="service-card reveal reveal-delay-1" data-mouse>
+        <div class="service-icon">👤</div>
+        <div class="service-title">Portfolio Websites</div>
+        <div class="service-desc">Stunning personal portfolios that showcase your work beautifully. Stand out from the crowd with a unique, memorable online presence.</div>
+        <div class="service-tag">Creative</div>
+      </div>
+      <div class="service-card reveal reveal-delay-2" data-mouse>
+        <div class="service-icon">⚙️</div>
+        <div class="service-title">Full Stack Web Applications</div>
+        <div class="service-desc">End-to-end web applications with powerful backends, robust APIs, and seamless user experiences — built to scale.</div>
+        <div class="service-tag">Advanced</div>
+      </div>
+      <div class="service-card reveal reveal-delay-3" data-mouse>
+        <div class="service-icon">🛒</div>
+        <div class="service-title">E-commerce Development</div>
+        <div class="service-desc">Complete online stores with cart, checkout, payment gateways, product management, and admin dashboards — ready to sell from day one.</div>
+        <div class="service-tag">Revenue Ready</div>
+      </div>
+      <div class="service-card reveal reveal-delay-1" data-mouse>
+        <div class="service-icon">🎨</div>
+        <div class="service-title">UI/UX Design</div>
+        <div class="service-desc">Intuitive, beautiful interfaces crafted with users in mind. We design experiences that delight and convert — not just look good.</div>
+        <div class="service-tag">Design First</div>
+      </div>
+      <div class="service-card reveal reveal-delay-2" data-mouse>
+        <div class="service-icon">🔧</div>
+        <div class="service-title">Optimization &amp; Bug Fixing</div>
+        <div class="service-desc">Speed up your existing site, fix broken features, and improve performance scores. We diagnose and resolve issues fast.</div>
+        <div class="service-tag">Quick Turnaround</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TECHNOLOGIES -->
+<section id="technologies">
+  <div class="section-inner">
+    <div class="tech-header">
+      <div class="section-eyebrow">Our Stack</div>
+      <h2 class="section-title">Technologies We<br>Master</h2>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-category reveal">
+        <div class="tech-cat-label">Frontend</div>
+        <div class="tech-chips">
+          <div class="tech-chip">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M6 6l2.5 18 7.5 2 7.5-2L26 6H6z" fill="#E44D26"/><path d="M16 22.5V8.5H8.5l1.8 13z" fill="#F16529"/><path d="M23.5 8.5H16v14l5.7-1.6z" fill="#E44D26"/><path d="M11 13h5v-2h-4.7L11 13zm.3 3H16v-2h-4.5l-.2 2zm5-5v2h3.3l-.3 2H16v2h3.8l-.5 4.2L16 20v2.2l3.8-1.1L20.7 13z" fill="#fff"/></svg>
+            HTML
+          </div>
+          <div class="tech-chip">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M6 6l2.5 18 7.5 2 7.5-2L26 6H6z" fill="#1572B6"/><path d="M16 22.5V8.5H8.5l1.8 13z" fill="#33A9DC"/><path d="M11 13h5v-2H11l.1 2zm-.1 3H16v-2h-5l.1 2zm9.9-5l-.1 2H16v2h4.6l-.4 4.2-4.2 1.2v2.2l4.8-1.3 3.1-18.3z" fill="#fff"/></svg>
+            CSS
+          </div>
+          <div class="tech-chip">
+            <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#F7DF1E"/><path d="M9 25.2l2.2-1.3c.4.8.8 1.4 1.7 1.4.9 0 1.4-.4 1.4-1.7V14.6h2.8v9.1c0 2.8-1.6 4-4 4-2.2 0-3.4-1.1-4.1-2.5zm10.2-.3l2.2-1.3c.6 1 1.3 1.7 2.6 1.7 1.1 0 1.8-.5 1.8-1.3 0-.9-.7-1.2-1.9-1.7l-.6-.3c-1.9-.8-3.2-1.8-3.2-3.9 0-2 1.5-3.4 3.8-3.4 1.7 0 2.9.6 3.7 2.1l-2.1 1.3c-.4-.8-.9-1.1-1.6-1.1-.7 0-1.2.4-1.2 1.1 0 .8.4 1.1 1.6 1.6l.7.3c2.2 1 3.5 2 3.5 4.1 0 2.3-1.8 3.6-4.2 3.6-2.4 0-3.9-1.1-4.6-2.8z" fill="#000"/></svg>
+            JavaScript
+          </div>
+          <div class="tech-chip">
+            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#20232A"/><path fill="#61DAFB" d="M16 14.7a1.3 1.3 0 100 2.6 1.3 1.3 0 000-2.6zM16 9.1c-4.4 0-7.9 2.1-7.9 4.6 0 2.5 3.5 4.6 7.9 4.6s7.9-2.1 7.9-4.6-3.5-4.6-7.9-4.6zm-6.6 9.7c-2.2 1.3-3.5 3-3.5 4.8 0 2.5 3.5 4.6 7.9 4.6.7 0 1.4-.1 2-.2-2.7-.7-4.6-2.4-4.6-4.4 0-.9.3-1.8.9-2.5-.2-.1-.5-.2-.7-.3zm13.2 0c-.2.1-.5.2-.7.3.6.7.9 1.6.9 2.5 0 2-1.9 3.7-4.6 4.4.6.1 1.3.2 2 .2 4.4 0 7.9-2.1 7.9-4.6 0-1.8-1.3-3.5-3.5-4.8z"/></svg>
+            React
+          </div>
+        </div>
+      </div>
+      <div class="tech-category reveal reveal-delay-1">
+        <div class="tech-cat-label">Backend</div>
+        <div class="tech-chips">
+          <div class="tech-chip">
+            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" fill="#339933"/><path d="M16 6.5c5.2 0 9.5 4.3 9.5 9.5S21.2 25.5 16 25.5 6.5 21.2 6.5 16 10.8 6.5 16 6.5zm-3 8.2c-.5-.1-1-.1-1.5 0-.2 0-.3.2-.3.3v3.5c0 .2.1.3.3.3h.5c.2 0 .3-.1.3-.3v-1.1h.5c.8 0 1.4-.6 1.4-1.4s-.6-1.3-1.2-1.3zm-.1 1.6H13v-.7h.7c.2 0 .4.1.4.4s-.2.3-.2.3zm4-.3c-.5 0-1 .1-1.4.4-.1.1-.1.2-.1.3v3.1c0 .2.1.3.3.3h.5c.2 0 .3-.1.3-.3v-1c.1 0 .3.1.5.1.9 0 1.5-.7 1.5-1.6 0-.7-.6-1.3-1.6-1.3zm-.1 2c-.2 0-.3 0-.4-.1v-1.1c.1-.1.3-.1.4-.1.4 0 .7.3.7.7 0 .3-.3.6-.7.6zm3.5-1.3c0-.2-.1-.3-.3-.3h-.5c-.2 0-.3.1-.3.3v3.1c0 .2.1.3.3.3h.5c.2 0 .3-.1.3-.3v-3.1z" fill="#fff"/></svg>
+            Node.js
+          </div>
+          <div class="tech-chip">
+            <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#000"/><path d="M13 22l-3-14h2.2l1.8 9.6L16 11h2l2 6.6 1.8-9.6H24l-3 11h-2.2l-1.8-6.2-1.8 6.2H13z" fill="#fff" opacity=".85"/></svg>
+            Express.js
+          </div>
+        </div>
+      </div>
+      <div class="tech-category reveal reveal-delay-2">
+        <div class="tech-cat-label">Database</div>
+        <div class="tech-chips">
+          <div class="tech-chip">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M16 4c-5 0-9 2.2-9 4.9v14.2C7 25.8 11 28 16 28s9-2.2 9-4.9V8.9C25 6.2 21 4 16 4z" fill="#13AA52"/><ellipse cx="16" cy="8.9" rx="9" ry="4.9" fill="#B8F0D0"/><path d="M7 13.8c0 2.7 4 4.9 9 4.9s9-2.2 9-4.9" stroke="#fff" stroke-width=".8" opacity=".5"/><path d="M7 18.7c0 2.7 4 4.9 9 4.9s9-2.2 9-4.9" stroke="#fff" stroke-width=".8" opacity=".5"/></svg>
+            MongoDB
+          </div>
+          <div class="tech-chip">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M16 4C9.4 4 4 9.4 4 16s5.4 12 12 12 12-5.4 12-12S22.6 4 16 4z" fill="#00758F"/><path d="M20.5 21.5h-2v-7h-5v7h-2V10.5h2v3h5v-3h2v11z" fill="#fff"/></svg>
+            MySQL
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="projects-header">
+      <div class="section-eyebrow">Our Work</div>
+      <h2 class="section-title">Projects We've<br>Shipped</h2>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-visual proj-bg-1">
+          <div class="proj-icon">🏢</div>
+          <div class="project-badge">Live</div>
+        </div>
+        <div class="project-body">
+          <div class="project-title"><a href="https://nexus-b.netlify.app/">Business Website</a></div>
+          <div class="project-desc">Responsive and blazing-fast business presence with modern UI, animations, and optimized performance across all devices.</div>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">Responsive</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-visual proj-bg-2">
+          <div class="proj-icon">🛒</div>
+          <div class="project-badge">E-Commerce</div>
+        </div>
+        <div class="project-body">
+          <div class="project-title"><a href="https://supra-ecom.netlify.app/">E-commerce Website</a></div>
+          <div class="project-desc">Full-featured online store with shopping cart, checkout system, payment integration, and product management dashboard.</div>
+          <div class="project-tags">
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">MongoDB</span>
+            <span class="project-tag">Express</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-visual proj-bg-3">
+          <div class="proj-icon">💬</div>
+          <div class="project-badge">Real-time</div>
+        </div>
+        <div class="project-body">
+          <div class="project-title"><a href="https://sophia-chatbot.netlify.app/">Chat Application</a></div>
+          <div class="project-desc">Real-time messaging platform with WebSocket integration, user authentication, message history, and mobile-responsive design.</div>
+          <div class="project-tags">
+            <span class="project-tag">Socket.io</span>
+            <span class="project-tag">React</span>
+            <span class="project-tag">Node.js</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WHY CHOOSE US -->
+<section id="why">
+  <div class="section-inner">
+    <div class="why-grid">
+      <div>
+        <div class="section-eyebrow">Why PageCraft</div>
+        <h2 class="section-title">Built Different,<br>Delivered Better</h2>
+        <div class="why-list">
+          <div class="why-item reveal">
+            <div class="why-icon">💰</div>
+            <div class="why-text">
+              <h4>Affordable Pricing</h4>
+              <p>Premium quality at startup-friendly rates. Transparent pricing with no hidden fees.</p>
+            </div>
+          </div>
+          <div class="why-item reveal reveal-delay-1">
+            <div class="why-icon">⚡</div>
+            <div class="why-text">
+              <h4>Fast Delivery</h4>
+              <p>We move quickly without cutting corners. Most projects ship ahead of schedule.</p>
+            </div>
+          </div>
+          <div class="why-item reveal reveal-delay-2">
+            <div class="why-icon">✨</div>
+            <div class="why-text">
+              <h4>Modern UI</h4>
+              <p>Contemporary, visually stunning interfaces that represent your brand at its best.</p>
+            </div>
+          </div>
+          <div class="why-item reveal reveal-delay-3">
+            <div class="why-icon">🕐</div>
+            <div class="why-text">
+              <h4>24/7 Support</h4>
+              <p>We're always available. Post-launch support, updates, and bug fixes — we've got you covered.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual reveal">
+        <div class="why-circle">
+          <div class="why-circle-inner">
+            <div class="why-center-num">100%</div>
+            <div class="why-center-label">Client Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <div class="section-eyebrow">Get in Touch</div>
+        <h2 class="section-title">Ready to Build<br>Something Great?</h2>
+        <p>Let's talk about your project. Whether you're a startup or an established business, we're here to bring your vision to life.</p>
+        <div class="contact-items">
+          <a href="mailto:pagecraft4@gmail.com" class="contact-item reveal">
+            <div class="contact-item-icon">📧</div>
+            <div class="contact-item-text">
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value">pagecraft4@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:9692916623" class="contact-item reveal reveal-delay-1">
+            <div class="contact-item-icon">📞</div>
+            <div class="contact-item-text">
+              <div class="contact-item-label">Phone</div>
+              <div class="contact-item-value">9692916623</div>
+            </div>
+          </a>
+          <a href="https://wa.me/9692916623" class="contact-item reveal reveal-delay-2">
+            <div class="contact-item-icon">💬</div>
+            <div class="contact-item-text">
+              <div class="contact-item-label">WhatsApp</div>
+              <div class="contact-item-value">9692916623</div>
+            </div>
+          </a>
+        </div>
+        <div class="contact-buttons">
+          <a href="mailto:pagecraft4@gmail.com" class="liquid-btn liquid-btn-primary liquid-btn-lg">Send Email</a>
+          <a href="https://wa.me/9692916623" class="liquid-btn liquid-btn-accent2 liquid-btn-lg">WhatsApp Us</a>
+        </div>
+      </div>
+      <div class="contact-form reveal reveal-delay-1">
+        <div class="section-eyebrow" style="margin-bottom:20px;">Quick Message</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Name</label>
+            <input class="form-input" type="text" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input class="form-input" type="email" placeholder="you@email.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Project Type</label>
+          <input class="form-input" type="text" placeholder="e.g. Business Website, E-commerce...">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Tell us about your project…"></textarea>
+        </div>
+        <div class="form-group">
+          <button class="liquid-btn liquid-btn-primary liquid-btn-lg btn-full" id="submitBtn">Send Message →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">PageCraft</div>
+  <div class="footer-tagline">"We craft modern, fast &amp; scalable websites for businesses."</div>
+  <div class="footer-links">
+    <a href="#services">Services</a>
+    <a href="#technologies">Technologies</a>
+    <a href="#projects">Projects</a>
+    <a href="#why">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Social Icons -->
+  <div class="footer-socials">
+    <a href="https://www.instagram.com/pagecraft4/?__pwa=1" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="20" height="20" rx="5.5" stroke="currentColor" stroke-width="1.8"/>
+        <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.8"/>
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+      </svg>
+    </a>
+    <a href="https://www.facebook.com/share/1Atd8PhfF2/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/in/page-craft-a364063b8" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M7 10v7M7 7v.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M11 17v-4a2 2 0 0 1 4 0v4M11 10v7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+
+  <div class="footer-copy">© 2026 PageCraft. All rights reserved. Built with passion.</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
